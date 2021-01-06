@@ -82,6 +82,23 @@
       <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
     </footer>
-    <!-- END Footer -->
+	<!-- END Footer -->
+	<script>
+	let myDate = new Date();
+	let myHours = myDate.getHours();
+	let myGreeting ="";
+	let myColor="";
+
+	if(myHours>5) {
+	myGreeting = "Good Afternoon";
+	myColor ="orange";
+	}
+	else{
+	myGreeting = "Good Morning";
+	myColor ="yellow";
+	}
+	document.getElementById('mydiv').innerHTML = myGreeting;
+	document.body.style.backgroundColor=myColor;
+	</script>
 </body>
 </html>
