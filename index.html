@@ -90,14 +90,24 @@
 	let myGreeting ="";
 	let myColor="";
 
-	if(myHours>5) {
-	myGreeting = "Good Afternoon";
-	myColor ="orange";
-	}
-	else{
-	myGreeting = "Good Morning";
-	myColor ="yellow";
-	}
+		//Test Only - Remove This later
+		myHours = 8;
+
+		if(myHours>5 && myHours <12) {
+			myGreeting = "Good Morning";
+			myColor ="orange";
+		}
+		else if (myHours>12){
+			myGreeting = "Good afternoon";
+			myColor ="yellow";
+		}
+		else{
+			myGreeting = "Good night";
+			myColor ="blue";
+			alert('Night time');
+		}
+		
+
 	document.getElementById('mydiv').innerHTML = myGreeting;
 	document.body.style.backgroundColor=myColor;
 	</script>
