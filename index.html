@@ -86,13 +86,13 @@
 	<!-- END Footer -->
 	<script>
 	let myDate = new Date();
-	let myHours = 0;
+	let myHours = myDate.getHours();;
 	let myGreeting ="";
 	let myColor="";
 	let myPic="images/";
 
 		//Test Only - Remove This later
-		//myHours = 8; myDate.getHours();
+		//myHours = 8; 
 	
 		if(myHours>=5 && myHours <12) {
 			myGreeting = "Good Morning";
@@ -104,7 +104,7 @@
 			myColor ="yellow";
 			myPic +="afternoon.jpg";
 		}
-		else if (myHours>=18 && myHours<=5){
+		else if (myHours>=18 && myHours<=23){
 			myGreeting = "Good Evening";
 			myColor ="purple";
 			myPic +="evening.jpg";
