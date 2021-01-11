@@ -94,19 +94,25 @@
 		//Test Only - Remove This later
 		myHours = 8;
 
-		if(myHours>5 && myHours <12) {
+		if(myHours>=5 && myHours <12) {
 			myGreeting = "Good Morning";
 			myColor ="orange";
 			myPic +="morning.jpg";
 		}
-		else if (myHours>12){
+		else if (myHours>=12 && myHours<18){
 			myGreeting = "Good afternoon";
 			myColor ="yellow";
+			myPic +="afternoon.jpg";
+		}
+		else if (myHours>=18 && myHours<=5){
+			myGreeting = "Good Evening";
+			myColor ="purple";
+			myPic +="evening.jpg";
 		}
 		else{
 			myGreeting = "Good night";
 			myColor ="blue";
-			alert('Night time');
+			myPic +="night.jpg";
 		}
 		
 
