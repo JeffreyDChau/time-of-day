@@ -90,10 +90,18 @@
 	let myGreeting ="";
 	let myColor="";
 	let myPic="images/";
+		//Get weekday array
+		let weekday = new Array(7);
+		weekday[0] = "Sunday";
+		weekday[1] = "Monday";
+		weekday[2] = "Tuesday";
+		weekday[3] = "Wednesday";
+		weekday[4] = "Thursday";
+		weekday[5] = "Friday";
+		weekday[6] = "Saturday";
 
-		//Test Only - Remove This later
-		//myHours = 8; 
-	
+		let day = weekday[myDate.getDay()];
+			//weekday is an array and myDate.getDay() is aquireing the correct number
 		if(myHours>=5 && myHours <12) {
 			myGreeting = "Good Morning";
 			myColor ="orange";
@@ -114,7 +122,7 @@
 			myColor ="blue";
 			myPic +="night.jpg";
 		}
-		alert("The time is: " + myHours);
+		alert("The time is: " + myHours + day);
 
 	document.getElementById('mydiv').innerHTML = myGreeting;
 	document.body.style.backgroundColor=myColor;
