@@ -87,9 +87,9 @@
 	<script>
 	let myDate = new Date();
 	let myHours = myDate.getHours();;
-	let myGreeting ="";
-	let myColor="";
-	let myPic="images/";
+	let myGreeting ='';
+	let myColor='';
+	let myPic='images/';
 		//Get weekday array
 		let weekday = new Array(7);
 		weekday[0] = "Sunday";
@@ -103,24 +103,24 @@
 		let day = weekday[myDate.getDay()];
 			//weekday is an array and myDate.getDay() is aquireing the correct number
 		if(myHours>=5 && myHours <12) {
-			myGreeting = "Good Morning";
-			myColor ="orange";
-			myPic +="morning.jpg";
+			myGreeting = 'Good Morning';
+			myColor ='orange';
+			myPic +='morning.jpg';
 		}
 		else if (myHours>=12 && myHours<18){
-			myGreeting = "Good afternoon";
-			myColor ="yellow";
-			myPic +="afternoon.jpg";
+			myGreeting = 'Good afternoon';
+			myColor ='yellow';
+			myPic +='afternoon.jpg';
 		}
 		else if (myHours>=18 && myHours<=23){
-			myGreeting = "Good Evening";
-			myColor ="purple";
-			myPic +="evening.jpg";
+			myGreeting = 'Good Evening';
+			myColor ='purple';
+			myPic +='evening.jpg';
 		}
 		else{
-			myGreeting = "Good night";
-			myColor ="blue";
-			myPic +="night.jpg";
+			myGreeting = 'Good night';
+			myColor ='blue';
+			myPic +='night.jpg';
 		}
 		alert("The time is: " + myHours + " " + "Day: " + day);
 
